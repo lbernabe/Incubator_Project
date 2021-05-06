@@ -1,1 +1,8 @@
-# Incubator_Project
+# Incubator_Project proposal
+
+ACTIVITY RECOMENDER PLANNER (in Boulder): 
+Query weather forecast from the government servives-web-api (https://www.weather.gov/documentation/services-web-api) in order to first do a data analysis in the area and secondly align it with the free timeslots the user has in his/her calendar (https://developers.google.com/calendar/quickstart/python). This first step can be considered a simple recommendation system by filtration, in the sense that it will recommend available times for the user that will match the desired weather. 
+Secondly, the planner will return a list of n activities (best match to worse match) based out of the hobbies, weather, and specifics of the location. The output of the planner could include outdoor sports activities (strava data - https://www.strava.com/settings/api , trail systems and conditions -web scraped data), indoor sports activities (city gyms and rec centers – web scraped data) and other events (facebook and/or city events). The customer will rate the activity suggestion to help the model learn for future usage.
+First time users, as we won’t have previous information or activity ratings, we will suggest a questionnaire to help narrow down the generic suggestions. The repeat customers ratings and activity generation will be fed into the content based recommended filtering system. We will try to add collaborative filtering recommendation systems if data from other users (athletes) is public and available, which I have not found yet. 
+
+Weather usually plays and important role (for safety reasons) in activities (specially in Colorado/Utah/Wyoming/Idaho), and this recommended system would give you different options of what to do when you are free but you have not had enough time to do appropriate research (weather/outdoor options/indoor options).
